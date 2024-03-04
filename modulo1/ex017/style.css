@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+
+img#back {
+  margin-top: 16px;
+}
+
+a:link {
+  color: cadetblue;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: darkgrey;
+  text-decoration: none;
+}
+a:hover {
+  color: aliceblue;
+  text-decoration: none;
+}
+a:active {
+  color: aliceblue;
+  text-decoration: none;
+}
