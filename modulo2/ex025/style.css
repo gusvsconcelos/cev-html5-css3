@@ -1,23 +1,36 @@
 /*
-    Em HTML é id  = #
-    Em HTML é class  = .
+    Em HTML é id  = # (apenas um id por código html)
+    Em HTML é class  = . (pode ter multiplas classes por códigos html)
 */
 
 body {
-  background-color: rgb(205, 255, 203);
+  background-color: #cce8e5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  color: rgb(4, 109, 0);
+  color: #255537;
 }
 
 #principal {
   text-align: center;
-  background-color: green;
-  color: white;
+  background-color: #439963;
+  color: #cde8dc;
 }
 
 h2 {
-  color: rgb(51, 77, 49);
+  color: #34774d;
+  text-shadow: #233432 1px 1px 2px;
+}
+
+.basico {
+  color: #34774d;
+}
+
+.intermediario {
+  color: #cccc66;
+}
+
+.avancado {
+  color: #945f57;
 }
