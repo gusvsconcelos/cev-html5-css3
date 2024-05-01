@@ -1,0 +1,270 @@
+/* font setup */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: iDroid;
+  src:
+    local(iDroid),
+    url(fontes/idroid.otf) format("opentype");
+}
+
+/* color pallete */
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #84e1ad;
+  --cor2: #3cd782;
+  --cor3: #2fa866;
+  --cor4: #1a5c38;
+
+  --shadow: #00000040;
+  --white: aliceblue;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: "Bebas Neue", cursive;
+  --fonte-android: iDroid, cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* main structure setup */
+body {
+  background-color: var(--cor1);
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  background: linear-gradient(0deg, var(--cor4), var(--cor1));
+  text-align: center;
+  box-shadow: 0px 2px 10px var(--shadow);
+}
+
+header > h1 {
+  font-family: var(--fonte-destaque);
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px var(--shadow);
+  color: var(--white);
+  padding: 30px;
+}
+
+header > p {
+  font-size: 18px;
+  text-shadow: 2px 2px 4px var(--shadow);
+  color: var(--white);
+  padding-bottom: 25px;
+  margin: auto;
+}
+
+nav {
+  text-align: left;
+  padding: 8px;
+}
+
+nav > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white);
+  margin: 8px;
+}
+
+main {
+  background-color: var(--white);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 6px 10px var(--shadow);
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* titles setup */
+article > h1,
+h2 {
+  font-family: var(--fonte-android);
+  color: var(--cor4);
+}
+
+article > h1 {
+  font-size: 2em;
+  margin: 0 10px;
+  padding: 25px 10px 0 10px;
+}
+
+h2 {
+  background: linear-gradient(90deg, var(--cor0), var(--white));
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 12px 0 0 12px;
+}
+
+h3 {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+/* paragraph setup */
+main p {
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.4em;
+  padding: 10px;
+  margin: 10px;
+}
+
+aside > p {
+  margin: 0 10px;
+}
+
+strong {
+  color: var(--cor4);
+}
+
+/* links setup */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor4);
+}
+
+a:hover {
+  color: var(--cor3);
+  transition-duration: 0.4s;
+}
+
+main a::after {
+  content: "\1F517";
+}
+
+/* extra content setup */
+img {
+  display: block;
+  max-width: 95%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.video {
+  background-color: var(--cor4);
+  margin-bottom: 30px;
+}
+
+iframe {
+  display: block;
+  aspect-ratio: 16 / 9;
+  width: 90% !important;
+  height: 90% !important;
+  padding: 20px;
+  margin: auto;
+}
+
+aside {
+  background-color: var(--cor0);
+  max-width: 90%;
+  margin: auto;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px var(--shadow);
+}
+
+aside > h3 {
+  background-color: var(--cor3);
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* list setup */
+aside > ul {
+  list-style-position: inside;
+  columns: 2;
+}
+
+li {
+  list-style-type: "\2714\00a0\00a0";
+  text-indent: 30px;
+}
+
+/* footer setup */
+footer {
+  background-color: var(--cor4);
+  font-style: italic;
+  text-align: center;
+  color: var(--white);
+  padding: 6px;
+}
+
+footer a {
+  color: var(--white);
+}
+
+/* --- media queries --- */
+
+/* [900px] */
+@media (max-width: 900px) {
+  main {
+    max-width: 100%;
+  }
+}
+
+/* [560px] */
+@media (max-width: 560px) {
+  header > h1 {
+    font-size: 8vw;
+    padding-bottom: 12px;
+  }
+
+  header > p {
+    max-width: 90%;
+    font-size: 3vw;
+  }
+
+  nav {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  article > h1 {
+    font-size: 5.5vw;
+  }
+
+  h2 {
+    font-size: 4.2vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  aside {
+    max-width: 95%;
+  }
+
+  aside > ul {
+    columns: 1;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+
+/* [375px] */
+@media (max-width: 375px) {
+  header > p {
+    max-width: 80%;
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  li {
+    font-size: 4vw;
+  }
+
+  footer {
+    font-size: 3.7vw;
+  }
+}
