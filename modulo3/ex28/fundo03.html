@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posição dos Fundos</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1a1b26;
+        padding: 20px;
+      }
+
+      p {
+        position: absolute;
+        top: -40px;
+        left: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #3b4261;
+      }
+
+      .bloco {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #3b4261;
+        border-radius: 20px;
+        box-shadow: 6px 6px 8px #131314;
+        width: 90%;
+        max-width: 800px;
+        height: 180px;
+        margin: 20px;
+      }
+
+      #q1,
+      #q2,
+      #q3,
+      #q4,
+      #q5,
+      #q6,
+      #q7 {
+        background-image: url(imagens/wallpaper003.jpg);
+        background-size: 140%;
+        border-radius: 20px;
+        box-shadow: 4px 4px 6px #1a1b26;
+        width: 97%;
+        height: 88%;
+      }
+
+      #q1 {
+        background-position: left top;
+      }
+
+      #q2 {
+        background-position: left center;
+      }
+
+      #q3 {
+        background-position: left bottom;
+      }
+
+      #q4 {
+        background-position: right top;
+      }
+
+      #q5 {
+        background-position: right center;
+      }
+
+      #q6 {
+        background-position: right bottom;
+      }
+
+      #q7 {
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bloco">
+      <p>left top</p>
+      <div id="q1"></div>
+    </div>
+
+    <div class="bloco">
+      <p>left center</p>
+      <div id="q2"></div>
+    </div>
+
+    <div class="bloco">
+      <p>left bottom</p>
+      <div id="q3"></div>
+    </div>
+
+    <div class="bloco">
+      <p>right top</p>
+      <div id="q4"></div>
+    </div>
+
+    <div class="bloco">
+      <p>right center</p>
+      <div id="q5"></div>
+    </div>
+
+    <div class="bloco">
+      <p>right bottom</p>
+      <div id="q6"></div>
+    </div>
+
+    <div class="bloco">
+      <p>center center</p>
+      <div id="q7"></div>
+    </div>
+  </body>
+</html>
