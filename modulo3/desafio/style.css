@@ -35,7 +35,7 @@ h1 {
 
 section {
   font-family: var(--fonte2);
-  padding: 6vw 0 6vw 40px;
+  padding: 10vw 0 10vw 40px;
 }
 
 main p {
@@ -56,12 +56,12 @@ main p {
 }
 
 #bg1 {
-  background: beige url(imagens/background001.jpg) center center / cover
+  background: beige url(imagens/background001.jpg) right center / cover
     no-repeat fixed;
 }
 
 #bg2 {
-  background: beige url(imagens/background002.jpg) center center / cover
+  background: beige url(imagens/background002.jpg) right center / cover
     no-repeat fixed;
 }
 
