@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+        position: relative;
+      }
+
+      caption {
+        background-color: lightgray;
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        width: 200px;
+        height: 30px;
+        padding: 4px;
+      }
+
+      th {
+        background-color: gray;
+        color: white;
+      }
+
+      .num {
+        text-align: right;
+      }
+
+      tbody > tr:nth-child(odd) /* 2n-1 */ {
+        background-color: white;
+      }
+
+      tbody > tr:nth-child(even) /* 2n */ {
+        background-color: lightgray;
+      }
+
+      thead th {
+        position: sticky;
+        top: -1px;
+      }
+
+      h2 {
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      p {
+        text-align: justify;
+        padding: 10px;
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+          CAPTION
+          THEAD
+              tr, td, th
+          TBODY
+              tr, td, th
+          TFOOT
+              tr, td, th
+      -->
+
+    <table>
+      <caption>
+        População das Unidades Federativas
+      </caption>
+      <thead>
+        <tr>
+          <th>Estado</th>
+          <th>População</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>São Paulo</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Paraná</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Rio Grande do Sul</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Pernambuco</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Ceará</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Pará</td>
+          <td class="num">00 000 00</td>
+        </tr>
+        <tr>
+          <td>Santa Catarina</td>
+          <td class="num">00 000 00</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th scope="row">Total de Habitantes</th>
+          <td class="num"><strong>00 000 00</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Lorem Ipsum</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      feugiat tellus pretium arcu posuere sodales. Nunc id faucibus est. Mauris
+      dapibus feugiat porttitor. Curabitur sed felis elementum, fringilla magna
+      eu, iaculis sem. Donec auctor efficitur dapibus. Donec quis malesuada
+      velit. Curabitur id elementum elit. Vestibulum consequat eros sit amet
+      eros congue, id cursus tellus finibus. Nam rutrum elit sit amet vehicula
+      pulvinar. Aliquam metus ligula, malesuada interdum sapien vel,
+      pellentesque feugiat sem. Aenean rutrum mauris nec vehicula molestie.
+      Integer accumsan tincidunt felis, at sagittis nisi tempus a. Morbi in
+      venenatis neque, quis ullamcorper orci. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Nullam urna enim, gravida eu luctus accumsan,
+      semper id nisl. Donec sit amet orci sit amet nisl viverra commodo nec et
+      nibh. Aliquam cursus lacus et porttitor lobortis. Duis interdum rutrum
+      porta. Proin quis placerat ante. Phasellus dapibus velit feugiat, lobortis
+      urna sit amet, hendrerit nisl. Proin tincidunt purus vitae ipsum
+      fermentum, sed lobortis ex venenatis. Integer vitae lacus ornare, laoreet
+      augue a, posuere mi. Aenean iaculis lacus ac convallis rhoncus. Morbi
+      fringilla scelerisque iaculis. Mauris id libero vel leo eleifend
+      consectetur et id nibh. Vestibulum odio diam, pulvinar at molestie non,
+      feugiat nec sem. Sed feugiat pellentesque elit quis pellentesque. Mauris
+      lacinia ullamcorper tempus. Integer volutpat diam quis lorem feugiat
+      laoreet et vel ligula. Suspendisse tempor odio nec sollicitudin ornare.
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Nam viverra aliquet congue. Cras ante dui, auctor eu tellus
+      vitae, mollis laoreet turpis. Sed eget fringilla tortor. Quisque et mattis
+      dui, vel accumsan augue. Donec orci felis, fermentum eget dictum finibus,
+      suscipit at purus. Morbi aliquam est non nulla consequat pulvinar. Integer
+      suscipit scelerisque maximus. Sed fermentum euismod scelerisque. Sed
+      pellentesque hendrerit dolor, in viverra ipsum lacinia sodales. Maecenas
+      aliquet et nisi a porta. Nullam posuere purus pellentesque, dictum leo
+      eget, tincidunt dui. Nullam gravida ligula sollicitudin viverra congue.
+      Integer euismod ornare luctus. Donec diam arcu, volutpat a mauris ac,
+      tristique consequat nibh. Suspendisse fringilla justo vestibulum
+      consectetur auctor. Aenean vestibulum lorem quis est molestie finibus.
+      Duis quis felis et sem euismod rutrum et sed dui. Nulla feugiat egestas
+      enim ac aliquam. Duis sodales erat ac mi accumsan sodales. Nunc vitae
+      magna convallis, faucibus turpis quis, fermentum enim. Morbi rutrum diam
+      condimentum enim sagittis, non aliquam eros iaculis. Phasellus ac arcu sed
+      metus finibus venenatis. Aliquam eleifend enim in massa vulputate, et
+      ultricies erat rhoncus. Pellentesque ut mi quis augue semper ultrices at
+      ac sem. Mauris accumsan ipsum eu ex fringilla, iaculis ultrices dui
+      suscipit. Cras dapibus est sit amet neque aliquam pulvinar. Integer
+      euismod a velit non porttitor. Aliquam nec lacus facilisis ex molestie
+      pellentesque. Donec lobortis velit eget consequat sollicitudin.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+      ac turpis egestas. Curabitur tincidunt vehicula ligula. Sed vestibulum
+      bibendum eros ac varius. Fusce venenatis semper faucibus. Quisque ipsum
+      mauris, maximus et lacus facilisis, sodales malesuada lorem. Fusce
+      interdum lacinia quam vel fringilla. Integer vel ornare justo. Quisque
+      auctor porttitor nulla, ac placerat ipsum rutrum eget. Etiam felis elit,
+      hendrerit et dolor quis, ultrices pellentesque erat. Quisque tempor non
+      libero eu fringilla. Donec pulvinar volutpat nunc, et luctus nulla
+      consectetur quis. Fusce elit urna, facilisis sed imperdiet eget, posuere
+      gravida tellus. Praesent eget est in lacus scelerisque consequat. Aenean
+      faucibus arcu felis, sed pellentesque odio dictum et. Aenean ex est, porta
+      sed lorem eget, bibendum tincidunt arcu. Phasellus vehicula, magna in
+      egestas imperdiet, elit enim tincidunt sem, et feugiat justo risus et
+      elit. Donec sagittis augue sapien. Nulla elit diam, feugiat eget purus ac,
+      lobortis auctor arcu. Curabitur sed purus facilisis, fringilla tortor vel,
+      mattis ex. Duis ex lectus, viverra eget commodo sit amet, rhoncus eu
+      tortor. Aenean pretium id nisl ac ornare. Sed in condimentum lectus. Ut
+      sed velit euismod, consequat nisl id, viverra enim. Nullam egestas cursus
+      tortor. Duis vestibulum ligula vel lectus lacinia vestibulum. Phasellus
+      ullamcorper consectetur porttitor. Integer viverra lacinia enim, non
+      molestie nibh. Maecenas dapibus erat augue, ac iaculis mi dictum at.
+      Vestibulum mi elit, rutrum quis efficitur a, malesuada a urna. Nulla eu
+      orci et leo suscipit tempus ac nec ex. Curabitur eleifend efficitur
+      euismod. Sed at vestibulum mi, eget semper nulla. Nullam sed vestibulum
+      diam. Suspendisse ut turpis ut nibh iaculis auctor. Morbi in facilisis
+      libero. Aenean tincidunt libero sed est sodales, sodales congue magna
+      pharetra. Vivamus a arcu dolor. Cras laoreet dolor non tellus blandit, id
+      volutpat urna suscipit. Duis sagittis sit amet velit non dapibus. In eros
+      urna, tristique eget dictum a, pharetra eget augue. Proin vitae ultricies
+      turpis, at cursus urna. Curabitur ultricies aliquam suscipit. Interdum et
+      malesuada fames ac ante ipsum primis in faucibus. Mauris feugiat gravida
+      porta. Duis posuere faucibus egestas. Aenean sit amet condimentum ligula.
+      Integer sed vestibulum diam, pulvinar pellentesque magna. Sed viverra odio
+      nec nulla maximus, eu rutrum libero facilisis. Sed vitae lacus consequat,
+      porta elit ac, sagittis sem. Pellentesque eget convallis diam, eu tempor
+      lacus. Pellentesque egestas tortor id purus pretium lobortis. Donec dolor
+      tellus, vehicula id consectetur non, sagittis a nunc. Suspendisse sit amet
+      purus turpis. Pellentesque vitae quam id purus tincidunt pharetra at non
+      enim. Suspendisse potenti. Fusce eu lorem dapibus, ultricies mi eu,
+      faucibus leo. Pellentesque erat massa, fringilla eu dolor quis, dignissim
+      posuere nisl. Morbi in aliquet orci. Mauris interdum erat at risus lacinia
+      consectetur. Pellentesque aliquam eleifend turpis, a fermentum ex rhoncus
+      id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam
+      nunc risus, porttitor vel ipsum eget, gravida rutrum enim. Donec posuere
+      ut enim sed porta. Sed id efficitur orci. Orci varius natoque penatibus et
+      magnis dis parturient montes, nascetur ridiculus mus. Nulla dapibus
+      egestas ipsum quis ultricies. Phasellus congue posuere justo, sed porta
+      metus. Mauris ac lacus mauris. Phasellus vitae lorem tempus mi lobortis
+      consectetur eget sed orci. Etiam libero massa, malesuada et turpis in,
+      consequat vestibulum elit.
+    </p>
+  </body>
+</html>
