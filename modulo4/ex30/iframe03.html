@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos de iframe</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe {
+        width: 98vw;
+        height: 400px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste com iframe</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Facilisi cras
+      fermentum odio eu feugiat. Vitae congue eu consequat ac. Nulla
+      pellentesque dignissim enim sit amet venenatis. Vulputate eu scelerisque
+      felis imperdiet proin fermentum. Laoreet non curabitur gravida arcu ac
+      tortor dignissim convallis aenean. Cursus eget nunc scelerisque viverra
+      mauris in. Tortor aliquam nulla facilisi cras fermentum odio. Enim
+      facilisis gravida neque convallis a cras semper. In ante metus dictum at
+      tempor commodo ullamcorper a lacus. Sed adipiscing diam donec adipiscing
+      tristique risus. Orci phasellus egestas tellus rutrum tellus pellentesque.
+      Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
+      Sagittis orci a scelerisque purus semper eget duis at. Morbi blandit
+      cursus risus at ultrices mi tempus imperdiet nulla. Aliquam purus sit amet
+      luctus venenatis lectus magna fringilla urna.
+    </p>
+
+    <ul>
+      <li><a href="paginas/pag01.html" target="frame">Página 1</a></li>
+      <li><a href="paginas/pag02.html" target="frame">Página 2</a></li>
+      <li><a href="paginas/pag03.html" target="frame">Página 3</a></li>
+    </ul>
+
+    <iframe
+      name="frame"
+      srcdoc="<h1>Escolha uma das opções acima</h1>"
+    ></iframe>
+  </body>
+</html>
