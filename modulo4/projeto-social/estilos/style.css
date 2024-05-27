@@ -29,3 +29,35 @@ main {
   width: 311px;
   background: url("../imagens/frame-iphone.png") no-repeat;
 }
+
+#tela {
+  position: absolute;
+  top: 81px;
+  left: 23px;
+  width: 266px;
+  height: 470px;
+  border: none;
+}
+
+#sociais {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+}
+
+#sociais img {
+  box-sizing: border-box;
+  margin: 10px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#sociais img:hover {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transform: translate(-3px, -3px);
+  box-shadow: 7px 7px 11px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
